@@ -1,0 +1,13 @@
+#MACOSX_DEPLOYMENT_TARGET=10.7
+CXX=g++
+SDL_PATH=/usr
+PREFIX=/usr
+CFLAGS= `$(SDL_PATH)/bin/sdl-config --cflags` -I$(PREFIX)/include/cmx  #-mmacosx-version-min=10.5  
+
+all:
+	$(CXX) -c -O3 -Wall $(CFLAGS) quadtris.cc -o quadtris.o 
+	$(CXX) -c -O3 -Wall $(CFLAGS) main.cc -o main.o
+	$(CXX) -c -O3 -Wall $(CFLAGS) font.mxf.c -o font.o
+	$(CXX) main.o quadtris.o font.o  -o quadtris $(LDFLAGS)  `$(PREFIX)/bin/sdl-config --static-libs` -lcmx  -lpng -ljpeg -lz
+	#strip quadtris
+

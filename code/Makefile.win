@@ -1,0 +1,14 @@
+
+CXX=x86_64-w64-mingw32-g++
+STRIP=x86_64-w64-mingw32-strip
+WINDRES=x86_64-w64-mingw32-windres
+
+CFLAG= -DWIN -O3 -Wall -I$(MINGW_PATH)/include/cmx `$(MINGW_PATH)/bin/sdl-config --cflags`
+
+all:
+	$(CXX) $(CFLAG) -c quadtris.cc -o quadtris.o
+	$(CXX) $(CFLAG) -c font.mxf.c -o font.o
+	$(CXX) $(CFLAG) -c main.cc -o main.o
+	$(WINDRES) icon.rc -o icon.o
+	$(CXX) $(CFLAG) main.o font.o icon.o  quadtris.o -o quadtris.exe $(MINGW_PATH)/lib/libcmx.a -static  `$(MINGW_PATH)/bin/sdl-config --static-libs`   $(MINGW_PATH)/lib/libz.a $(MINGW_PATH)/lib/libjpeg.a  $(MINGW_PATH)/lib/libpng15.a $(MINGW_PATH)/lib/libz.a -lwsock32
+	$(STRIP) quadtris.exe
