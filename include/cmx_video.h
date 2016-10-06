@@ -112,7 +112,7 @@ namespace cmx {
 		inline void copySurfaceToBuffer(unsigned int *buf, int width, int height, cmx::video::Surface &surf, Rect src_rect, Rect dst_rect, bool hasAlpha = false) {
 			unsigned int *src_ptr = (unsigned int*) surf.buffer;
 			unsigned int *where = (unsigned int *) buf;
-			register int lines=0, i = 0;
+			int lines=0, i = 0;
 			unsigned int color_key = 0x0, key_color = 0x0;
 			if(hasAlpha == true) color_key = 0xFFFFFFFF;
 			/*temporary until later: */
@@ -140,7 +140,7 @@ namespace cmx {
 			}
 		}
 		inline void clrRect(unsigned int *buf, int w, int h, unsigned int col) {
-			register int x=0,y=0;
+			int x=0,y=0;
 			for(y = 0; y < h; ++y) {
 				for(x = 0; x < w; ++x) {
 					buf[x+(y*w)] = col;
