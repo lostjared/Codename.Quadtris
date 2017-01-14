@@ -1,0 +1,419 @@
+debug.o: debug.cc ../include/cmx_debug.h ../include/cmx_video.h \
+ ../include/cmx_types.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/string \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/c++config.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/os_defines.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/cpu_defines.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stringfwd.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/memoryfwd.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/char_traits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_algobase.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/functexcept.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/exception_defines.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/cpp_type_traits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/type_traits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/numeric_traits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_pair.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/move.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/concept_check.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/type_traits \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_iterator_base_types.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_iterator_base_funcs.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/debug/debug.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_iterator.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/ptr_traits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/postypes.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cwchar \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/wchar.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/crtdefs.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_mac.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/vadefs.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_stat64.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/swprintf.inl \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstdint \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include/stdint.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stdint.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include/stddef.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stddef.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/allocator.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/c++allocator.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/new_allocator.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/new \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/exception \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/atomic_lockfree_defines.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/exception_ptr.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/nested_exception.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/localefwd.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/c++locale.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/clocale \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/locale.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stdio.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/iosfwd \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cctype \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/ctype.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/ostream_insert.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/cxxabi_forced.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_function.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/backward/binders.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/range_access.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/basic_string.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/atomicity.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/gthr.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/gthr-default.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/errno.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/atomic_word.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/initializer_list \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/string_conversions.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstdlib \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stdlib.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include-fixed/limits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include-fixed/syslimits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/limits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/malloc.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstdio \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cerrno \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/functional_hash.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/hash_bytes.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/basic_string.tcc \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/iostream \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ostream \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ios \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/ios_base.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/locale_classes.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/locale_classes.tcc \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/streambuf \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/streambuf.tcc \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/basic_ios.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/locale_facets.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cwctype \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/wctype.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/ctype_base.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/streambuf_iterator.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/locale_facets.tcc \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/basic_ios.tcc \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/ostream.tcc \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/istream \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/istream.tcc \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/sstream \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/sstream.tcc \
+ ../include/cmx_error.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/memory \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_construct.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/alloc_traits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/alloc_traits.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_uninitialized.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_tempbuf.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_raw_storage_iter.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/typeinfo \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/concurrence.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/uses_allocator.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/functional \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/tuple \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/utility \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_relops.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/array \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/stdexcept \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/unique_ptr.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/shared_ptr.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/shared_ptr_base.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/aligned_buffer.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/backward/auto_ptr.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstring \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/string.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ ../include/cmx_font.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstdarg \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include/stdarg.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stdarg.h \
+ /Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_stdarg.h
+
+../include/cmx_debug.h:
+
+../include/cmx_video.h:
+
+../include/cmx_types.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/string:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/c++config.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/os_defines.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/cpu_defines.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stringfwd.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/memoryfwd.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/char_traits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_algobase.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/functexcept.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/exception_defines.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/cpp_type_traits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/type_traits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/numeric_traits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_pair.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/move.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/concept_check.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/type_traits:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_iterator_base_types.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_iterator_base_funcs.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/debug/debug.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_iterator.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/ptr_traits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/postypes.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cwchar:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/wchar.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/crtdefs.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_mac.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_secapi.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/vadefs.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sdks/_mingw_directx.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_print_push.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_off_t.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_stat64.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/swprintf.inl:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_print_pop.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstdint:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include/stdint.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stdint.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include/stddef.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stddef.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/allocator.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/c++allocator.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/new_allocator.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/new:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/exception:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/atomic_lockfree_defines.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/exception_ptr.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/nested_exception.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/localefwd.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/c++locale.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/clocale:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/locale.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stdio.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sec_api/stdio_s.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/iosfwd:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cctype:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/ctype.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/ostream_insert.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/cxxabi_forced.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_function.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/backward/binders.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/range_access.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/basic_string.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/atomicity.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/gthr.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/gthr-default.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/errno.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/atomic_word.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/initializer_list:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/string_conversions.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstdlib:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stdlib.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include-fixed/limits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include-fixed/syslimits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/limits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/malloc.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstdio:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cerrno:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/functional_hash.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/hash_bytes.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/basic_string.tcc:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/iostream:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ostream:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ios:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/ios_base.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/locale_classes.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/locale_classes.tcc:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/streambuf:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/streambuf.tcc:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/basic_ios.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/locale_facets.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cwctype:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/wctype.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/ctype_base.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/streambuf_iterator.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/x86_64-w64-mingw32/bits/ctype_inline.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/locale_facets.tcc:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/basic_ios.tcc:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/ostream.tcc:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/istream:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/istream.tcc:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/sstream:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/sstream.tcc:
+
+../include/cmx_error.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/memory:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_construct.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/alloc_traits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/alloc_traits.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_uninitialized.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_tempbuf.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_raw_storage_iter.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/typeinfo:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/concurrence.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/uses_allocator.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/functional:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/tuple:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/utility:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/stl_relops.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/array:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/stdexcept:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/unique_ptr.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/shared_ptr.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/bits/shared_ptr_base.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/ext/aligned_buffer.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/backward/auto_ptr.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstring:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/string.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
+../include/cmx_font.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/c++/4.9.0/cstdarg:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/lib/gcc/x86_64-w64-mingw32/4.9.0/include/stdarg.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/stdarg.h:
+
+/Volumes/Macintosh\ HD/Users/jared/mingw-w64/x86_64-w64-mingw32/include/_mingw_stdarg.h:

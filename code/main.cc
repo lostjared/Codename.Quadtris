@@ -20,8 +20,8 @@
 #include<cstdlib>
 #include<ctype.h>
 #include"afhd.h"
-#include"msocket.h"
-#include"scores.h"
+//#include"msocket.h"
+//#include"scores.h"
 
 // app variables
 
@@ -45,8 +45,6 @@ unsigned int image_shift = 0;
 bool connected = true;
 bool image_fade=false;
 int current_index = 0;
-static std::string iptext = "69.36.175.161";
-unsigned int port_num = 80;
 
 // functions
 
@@ -245,13 +243,6 @@ int main(int argc, char **argv) {
 	std::cout << "Quadtris - SDL Version\n";
 	changeTempPath(argc, argv);
 	srand((unsigned int) time(0));
-#ifdef WIN
-	WSAData dat;
-	if(WSAStartup(MAKEWORD(2,2), &dat) != 0) {
-		std::cerr << "Error could not initalize sockets..\n";
-		connected = false;
-	}
-#endif
 	assert(cmx::system::init_system() == 1);
 	int opt;
 	bool full = false;
@@ -325,7 +316,7 @@ int main(int argc, char **argv) {
 				}
 				else if(game_screen == SCR_SUBMIT) {
 					if(e.skey == cmx::event::K_RETURN) {
-						sendScore(input_text, game.score.score, game.score.num_clr);
+						///sendScore(input_text, game.score.score, game.score.num_clr);
 						input_text = "";
 						game_screen = SCR_START;
 					} else if(e.skey == 8) {
@@ -402,9 +393,6 @@ int main(int argc, char **argv) {
 
 	cmx::event::stopTimer(timer1_ID);
 	cmx::event::stopTimer(timer2_ID);
-#ifdef WIN
-	WSACleanup();
-#endif
 	return cmx::system::stop_system();
 }
 
@@ -696,7 +684,7 @@ void drawGrid(quad::GameGrid &grid, cmx::video::Surface *surface, cmx::Rect &sou
 		drawBlock(grid.piece,source_rect,surface,source_x, source_y,direction);
 	}
 }
-
+/*
 void transmitData(const Score &s) {
 	TempSocketObject tsocket;
 	if(tsocket.initConnection(iptext, port_num) == false) {
@@ -734,5 +722,5 @@ void sendScore(std::string userName, unsigned int score, unsigned int num_clr) {
 	transmitData(s);
 	//SDL_CreateThread(backgroundFunc, 0x0);
 }
-
+*/
 

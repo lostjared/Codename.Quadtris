@@ -10,5 +10,5 @@ all:
 	$(CXX) $(CFLAG) -c font.mxf.c -o font.o
 	$(CXX) $(CFLAG) -c main.cc -o main.o
 	$(WINDRES) icon.rc -o icon.o
-	$(CXX) $(CFLAG) main.o font.o icon.o  quadtris.o -o quadtris.exe $(MINGW_PATH)/lib/libcmx.a -static  `$(MINGW_PATH)/bin/sdl-config --static-libs`   $(MINGW_PATH)/lib/libz.a $(MINGW_PATH)/lib/libjpeg.a  $(MINGW_PATH)/lib/libpng15.a $(MINGW_PATH)/lib/libz.a -lwsock32
+	$(CXX) $(CFLAG) main.o font.o icon.o  quadtris.o -o quadtris.exe $(MINGW_PATH)/lib/libcmx.a -static  `$(MINGW_PATH)/bin/sdl-config --static-libs`   $(MINGW_PATH)/lib/libz.a $(MINGW_PATH)/lib/libjpeg.a  $(MINGW_PATH)/lib/libpng15.a $(MINGW_PATH)/lib/libz.a -lwsock32 -static-libgcc -static-libstdc++
 	$(STRIP) quadtris.exe
