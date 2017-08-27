@@ -79,7 +79,7 @@ AC_MSG_ERROR([Could not find libsdl anywhere, check http://www.sdl.org])
 ])
 
 if test -n "$LIBSDL_CONFIG"; then
-LIBSDL_LIBS="`$LIBSDL_CONFIG --static-libs`"
+LIBSDL_LIBS="`$LIBSDL_CONFIG --libs`"
 LIBSDL_RPATH=
 for args in $LIBSDL_LIBS; do
 case $args in
